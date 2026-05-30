@@ -30,15 +30,30 @@ body{
     background:#dc3545;
     color:#fff;
     text-align:center;
-    padding:25px;
+    padding:25px 25px 100px;
 }
 .hero h1{
     font-weight:700;
     margin:0;
 }
 .cat-img{
-    width:100%;
-    height:auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: -90px auto 20px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    background: #f8f9fa;
+}
+
+@media (max-width: 576px){
+    .cat-img{
+        width: 140px;
+        height: 140px;
+        margin: -70px auto 15px;
+    }
 }
 .cat-name{
     font-size:2rem;
